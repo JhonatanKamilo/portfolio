@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* ── Blue scale ── */
+    --blue-50:  #eff6ff;
+    --blue-100: #dbeafe;
+    --blue-200: #bfdbfe;
+    --blue-300: #93c5fd;
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+    --blue-800: #1e40af;
+    --blue-900: #1e3a8a;
+    --blue-950: #172554;
+
+    /* ── Light theme (default) ── */
+    --color-primary:    var(--blue-50);
+    --color-secondary:  var(--blue-100);
+    --color-surface:    var(--blue-200);
+    --color-border:     var(--blue-300);
+    --color-muted:      var(--blue-400);
+    --color-accent:     var(--blue-500);
+    --color-accent-alt: var(--blue-600);
+    --color-strong:     var(--blue-700);
+    --color-text:       var(--blue-900);
+    --color-text-muted: var(--blue-700);
+  }
+
+  [data-theme='dark'] {
+    /* ── Dark theme ── */
+    --color-primary:    var(--blue-950);
+    --color-secondary:  var(--blue-900);
+    --color-surface:    var(--blue-800);
+    --color-border:     var(--blue-700);
+    --color-muted:      var(--blue-600);
+    --color-accent:     var(--blue-400);
+    --color-accent-alt: var(--blue-300);
+    --color-strong:     var(--blue-200);
+    --color-text:       var(--blue-50);
+    --color-text-muted: var(--blue-300);
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--color-primary);
+    color: var(--color-text);
+  }
+
+  @keyframes launch-to-orbit {
+  0%   { transform: translate(-50%, -50%) scale(0.3); opacity: 0; }
+  20%  { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  100% { transform: translate(var(--tx), var(--ty)) scale(1); opacity: 1; }
+}
+
+@keyframes float-orbit {
+  0%   { transform: translate(var(--tx), var(--ty)) translateY(0px);   }
+  50%  { transform: translate(var(--tx), var(--ty)) translateY(-8px);  }
+  100% { transform: translate(var(--tx), var(--ty)) translateY(0px);   }
+}
+
+.icon-launch { animation: launch-to-orbit 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+.icon-float  { animation: float-orbit 3s ease-in-out infinite; }
+}
