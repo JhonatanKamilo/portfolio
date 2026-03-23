@@ -1,5 +1,4 @@
-import { navItems, socials } from "@data";
-import { NavLink } from "../navbar/components/NavLink";
+import { socials } from "@data";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
