@@ -14,7 +14,7 @@ export function SocialIcon({ icon: Icon, href, angle, delay, radius, bg }: Socia
 
   return (
     <a href={href} target="_blank" rel="noopener noreferrer" className={cls} style={cssVars}>
-      <Icon className="w-6 h-6 text-(--color-accent)" />
+      <Icon className={`w-6 h-6 ${bg === 'var(--blue-950)' ? 'text-white' : 'text-(--color-accent)'}`} />
     </a>
   );
 }
