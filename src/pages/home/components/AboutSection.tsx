@@ -17,14 +17,14 @@ export function AboutSection() {
       <div className="absolute top-0 right-[-10%] w-[40rem] h-[40rem] bg-[var(--color-accent)]/5 rounded-full blur-[100px] -z-10 pointer-events-none" />
       <div className="absolute bottom-[-10%] left-[-10%] w-[40rem] h-[40rem] bg-[var(--color-surface)]/20 rounded-full blur-[100px] -z-10 pointer-events-none" />
 
-      <div className="flex justify-center mb-20 text-center group">
-        <h3 className="text-[var(--color-text)] text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight opacity-90 rotate-4 group-hover:rotate-0 transition-transform duration-300">
+      <h2 className="flex justify-center mb-20 text-center group">
+        <span className="text-[var(--color-text)] text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight opacity-90 rotate-4 group-hover:rotate-0 transition-transform duration-300">
           SOBRE
-        </h3>
-        <h3 className="text-[var(--color-accent)] text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight -rotate-2 group-hover:rotate-0 transition-transform duration-300 ml-3 sm:ml-4 lg:ml-6">
+        </span>
+        <span className="text-[var(--color-accent)] text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight -rotate-2 group-hover:rotate-0 transition-transform duration-300 ml-3 sm:ml-4 lg:ml-6">
           MÍ
-        </h3>
-      </div>
+        </span>
+      </h2>
       
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         
@@ -32,10 +32,10 @@ export function AboutSection() {
           <div className="space-y-6">
             <p className="text-2xl sm:text-3xl font-medium text-[var(--color-text)] leading-tight">
               Desarrollador apasionado por crear experiencias digitales
-              <span className="text-[var(--color-text)]/40 italic"> extraordinarias</span>.
+              <span className="text-[var(--color-text)]/90 italic"> extraordinarias</span>.
             </p>
             {/* la opacidad aca es para q el texto base no chille tanto de noche */}
-            <p className="text-[var(--color-text)]/70 text-lg leading-relaxed font-light">
+            <p className="text-[var(--color-text)]/90 text-lg leading-relaxed font-light">
               Enfocado en tecnologías web modernas, transformo ideas
               complejas en soluciones intuitivas, eficientes y escalables. 
               Me enfoco constantemente en aprender, innovar y ofrecer un impacto real
@@ -94,9 +94,9 @@ export function AboutSection() {
       {/* Mi stack */}
       <div className="w-full mt-32 relative">
         <div className="flex flex-col items-center mb-16">
-          <h4 className="text-sm font-bold tracking-[0.3em] text-[var(--color-text)]/50 uppercase mb-4 text-center">
+          <h3 className="text-sm font-bold tracking-[0.3em] text-[var(--color-text)]/90 uppercase mb-4 text-center">
             Mi Stack Tecnológico
-          </h4>
+          </h3>
           <div className="w-16 h-1 bg-gradient-to-r from-transparent via-[var(--color-accent)]/80 to-transparent rounded-full"></div>
         </div>
 
@@ -111,9 +111,9 @@ export function AboutSection() {
                 className="mx-3 flex items-center gap-4 px-8 py-4 bg-[var(--color-text)]/[0.02] backdrop-blur-md border border-[var(--color-text)]/10 rounded-2xl shadow-[0_4px_20px_transparent] hover:shadow-[0_4px_20px_rgba(var(--color-accent),0.1)] hover:border-[var(--color-accent)]/30 hover:-translate-y-1 transition-all duration-300 group cursor-default"
               >
                 <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[var(--color-accent)]/10 group-hover:bg-[var(--color-accent)]/20 transition-colors duration-300">
-                  <Tech.icon className="w-7 h-7 text-[var(--color-text)]/70 group-hover:text-[var(--color-accent)] transition-colors duration-300" style={{ fill: "currentColor" }} />
+                  <Tech.icon className="w-7 h-7 text-[var(--color-text)]/90 group-hover:text-[var(--color-accent)] transition-colors duration-300" style={{ fill: "currentColor" }} />
                 </div>
-                <span className="font-semibold text-lg text-[var(--color-text)]/70 group-hover:text-[var(--color-text)] tracking-wide transition-colors duration-300">
+                <span className="font-semibold text-lg text-[var(--color-text)]/90 group-hover:text-[var(--color-text)] tracking-wide transition-colors duration-300">
                   {Tech.name}
                 </span>
               </div>
@@ -128,9 +128,9 @@ export function AboutSection() {
                 className="mx-3 flex items-center gap-4 px-8 py-4 bg-[var(--color-text)]/[0.02] backdrop-blur-md border border-[var(--color-text)]/10 rounded-2xl shadow-[0_4px_20px_transparent] hover:shadow-[0_4px_20px_rgba(var(--color-accent),0.1)] hover:border-[var(--color-accent)]/30 hover:-translate-y-1 transition-all duration-300 group cursor-default"
               >
                 <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-[var(--color-text)]/5 group-hover:bg-[var(--color-accent)]/10 transition-colors duration-300">
-                  <Tech.icon className="w-7 h-7 text-[var(--color-text)]/70 group-hover:text-[var(--color-accent)] transition-colors duration-300" style={{ fill: "currentColor" }} />
+                  <Tech.icon className="w-7 h-7 text-[var(--color-text)]/90 group-hover:text-[var(--color-accent)] transition-colors duration-300" style={{ fill: "currentColor" }} />
                 </div>
-                <span className="font-semibold text-lg text-[var(--color-text)]/70 group-hover:text-[var(--color-text)] tracking-wide transition-colors duration-300">
+                <span className="font-semibold text-lg text-[var(--color-text)]/90 group-hover:text-[var(--color-text)] tracking-wide transition-colors duration-300">
                   {Tech.name}
                 </span>
               </div>

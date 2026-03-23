@@ -12,9 +12,9 @@ export function Navbar() {
       }`}
     >
 
-      <h1 className="tracking-wide text-[var(--color-text)] font-light text-3xl md:text-4xl m-0">
+      <span className="tracking-wide text-[var(--color-text)] font-light text-3xl md:text-4xl m-0 cursor-default">
         Logo
-      </h1>
+      </span>
 
       <div className="flex gap-10 max-sm:hidden items-center">
         {navItems.map(item => (

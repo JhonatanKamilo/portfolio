@@ -25,7 +25,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   style={{ backgroundColor: social.bg }}
                   className="group p-2.5 rounded-lg border border-(--color-border)/30 hover:bg-(--color-accent) transition-all duration-300 hover:scale-110"
-                  aria-label={`Link a perfil ${index + 1}`}
+                  aria-label={social.href.includes('github') ? 'GitHub' : social.href.includes('linkedin') ? 'LinkedIn' : 'CodePen'}
                 >
                   <Icon className={`w-3 h-3 ${social.bg === 'var(--blue-950)' ? 'text-white' : 'text-(--color-text)'} group-hover:text-white`} />
                 </a>

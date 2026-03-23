@@ -35,7 +35,7 @@ export function CVViewerModal({ isOpen, onClose, cvUrl }: CVViewerModalProps) {
               <h3 className="text-xl font-bold text-[var(--color-text)] tracking-tight">
                 Análisis de CV
               </h3>
-              <p className="text-xs text-[var(--color-text)]/50 font-medium uppercase tracking-wider mt-0.5">
+              <p className="text-xs text-[var(--color-text)]/80 font-medium uppercase tracking-wider mt-0.5">
                 Jhonatan Camilo
               </p>
             </div>
@@ -44,7 +44,7 @@ export function CVViewerModal({ isOpen, onClose, cvUrl }: CVViewerModalProps) {
           <div className="flex items-center gap-3">
             <button 
               onClick={onClose}
-              className="cursor-pointer flex items-center justify-center p-2.5 rounded-xl hover:bg-[var(--color-surface)] text-[var(--color-text)]/50 hover:text-[var(--color-accent)] hover:rotate-90 transition-all duration-300"
+              className="cursor-pointer flex items-center justify-center p-2.5 rounded-xl hover:bg-[var(--color-surface)] text-[var(--color-text)]/80 hover:text-[var(--color-accent)] hover:rotate-90 transition-all duration-300"
               aria-label="Cerrar modal"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

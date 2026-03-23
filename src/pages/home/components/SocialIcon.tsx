@@ -13,7 +13,7 @@ export function SocialIcon({ icon: Icon, href, angle, delay, radius, bg }: Socia
   const cls = ['absolute left-1/2 top-1/2', 'w-12 h-12 flex items-center justify-center', 'rounded-full border border-(--color-border)/40', 'shadow-lg hover:scale-105 transition-transform duration-200', phase === 'launch' ? 'icon-launch' : 'icon-float'].join(' ');
 
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" className={cls} style={cssVars}>
+    <a href={href} target="_blank" rel="noopener noreferrer" className={cls} style={cssVars} aria-label={href.includes('github') ? 'GitHub' : href.includes('linkedin') ? 'LinkedIn' : 'CodePen'}>
       <Icon className={`w-6 h-6 ${bg === 'var(--blue-950)' ? 'text-white' : 'text-(--color-accent)'}`} />
     </a>
   );

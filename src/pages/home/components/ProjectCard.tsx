@@ -24,7 +24,7 @@ export function ProjectCard({ project: proj, index: i, isLast }: ProjectCardProp
             href={proj.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`absolute px-3 py-1.5 sm:px-5 sm:py-2 bg-[var(--color-primary)] text-[var(--color-accent)] rounded-lg border border-[var(--color-accent)] text-xs sm:text-sm font-medium hover:bg-[var(--color-accent)] hover:text-[var(--color-primary)] transition-all duration-300 shadow-md ${i % 2 === 0 ? 'right-2 top-2 sm:right-3 sm:top-3' : 'left-2 top-2 sm:left-3 sm:top-3'} flex items-center gap-1.5 sm:gap-2`}
+            className={`absolute px-3 py-1.5 sm:px-5 sm:py-2 bg-[var(--color-primary)] text-[var(--color-text)] rounded-lg border border-[var(--color-accent)] text-xs sm:text-sm font-medium hover:bg-[var(--color-accent)] hover:text-[var(--color-primary)] transition-all duration-300 shadow-md ${i % 2 === 0 ? 'right-2 top-2 sm:right-3 sm:top-3' : 'left-2 top-2 sm:left-3 sm:top-3'} flex items-center gap-1.5 sm:gap-2`}
           >
             Ver proyecto
             <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -83,7 +83,7 @@ export function ProjectCard({ project: proj, index: i, isLast }: ProjectCardProp
         {/* Textos: Alineados a la derecha SOLO para pantallas Extra Grandes (>= 1280px) */}
         <div className="hidden xl:flex flex-col gap-4 mt-2">
           <div className="relative">
-            <h4 className="relative text-[var(--color-text)] text-xl xl:text-2xl font-bold leading-snug break-words">{proj.title}</h4>
+            <h3 className="relative text-[var(--color-text)] text-xl xl:text-2xl font-bold leading-snug break-words">{proj.title}</h3>
           </div>
           <div className="flex flex-col gap-4 text-[var(--color-text)]/80 text-sm leading-relaxed">
             {paragraphs.map((p, pIdx) => (
@@ -98,7 +98,7 @@ export function ProjectCard({ project: proj, index: i, isLast }: ProjectCardProp
     {/* Textos: Modo Bloque Inferior con 2 Columnas para pantallas Medianas y Pequeñas (< 1280px) */}
     <div className="flex xl:hidden flex-col gap-6 w-full mt-2 md:mt-6">
       <div className="w-full">
-        <h4 className="text-[var(--color-text)] text-2xl sm:text-3xl font-bold leading-snug text-center md:text-left break-words">{proj.title}</h4>
+        <h3 className="text-[var(--color-text)] text-2xl sm:text-3xl font-bold leading-snug text-center md:text-left break-words">{proj.title}</h3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 text-[var(--color-text)]/80 text-base leading-relaxed">
         {paragraphs.map((p, pIdx) => (

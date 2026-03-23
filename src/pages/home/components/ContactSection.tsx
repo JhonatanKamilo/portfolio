@@ -8,16 +8,16 @@ export function ContactSection() {
 
       <div className="max-w-4xl mx-auto px-6">
         
-        <div className="flex flex-col sm:flex-row justify-center items-center mb-12 text-center group gap-2 sm:gap-0">
-          <h3 className="text-[var(--color-text)] text-5xl sm:text-5xl lg:text-6xl font-black tracking-tight opacity-90 rotate-4 group-hover:rotate-0 transition-transform duration-300">
+        <h2 className="flex justify-center flex-wrap mb-16 text-center group cursor-default">
+          <span className="text-[var(--color-text)] text-5xl sm:text-5xl lg:text-6xl font-black tracking-tight opacity-90 rotate-4 group-hover:rotate-0 transition-transform duration-300">
             CONTACTA
-          </h3>
-          <h3 className="text-[var(--color-accent)] text-5xl sm:text-5xl lg:text-6xl font-black tracking-tight -rotate-2 group-hover:rotate-0 transition-transform duration-300 ml-0 sm:ml-4 lg:ml-6">
+          </span>
+          <span className="text-[var(--color-accent)] text-5xl sm:text-5xl lg:text-6xl font-black tracking-tight -rotate-2 group-hover:rotate-0 transition-transform duration-300 ml-0 sm:ml-4 lg:ml-6">
             CONMIGO
-          </h3>
-        </div>
+          </span>
+        </h2>
 
-        <p className="text-[var(--color-text)]/60 text-center text-base sm:text-lg max-w-xl mx-auto font-light mb-16">
+        <p className="text-[var(--color-text)]/80 text-center text-base sm:text-lg max-w-xl mx-auto font-light mb-16">
           ¿Tienes una idea en mente o un proyecto en el que pueda aportar valor? 
           Comunícate conmigo y comencemos a trabajar juntos.
         </p>
@@ -31,12 +31,12 @@ export function ContactSection() {
             {/* animacion del borde iluminado en hover */}
             <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-accent)]/0 via-[var(--color-accent)]/5 to-[var(--color-accent)]/0 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500 pointer-events-none"></div>
             
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-text)]/70 group-hover:text-[var(--color-accent)] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--color-text)]/90 group-hover:text-[var(--color-accent)] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
             
             <div className="flex flex-col min-w-0">
-              <span className="text-[var(--color-text)]/50 text-[10px] uppercase tracking-widest font-semibold mb-0.5">Envíame un correo</span>
+              <span className="text-[var(--color-text)]/80 text-[10px] uppercase tracking-widest font-semibold mb-0.5">Envíame un correo</span>
               <span className="text-[var(--color-text)] font-mono text-xs sm:text-base font-medium truncate">
                 {emailContact}
               </span>
