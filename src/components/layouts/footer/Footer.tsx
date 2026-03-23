@@ -15,16 +15,6 @@ export function Footer() {
             </p>
           </div>
 
-          <nav className="hidden sm:flex gap-6 md:gap-8">
-            {navItems.map(item => (
-              <NavLink 
-                key={item.to} 
-                to={item.to} 
-                label={item.label}
-              />
-            ))}
-          </nav>
-
           <div className="flex gap-4">
             {socials.map((social, index) => {
               const Icon = social.icon;
